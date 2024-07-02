@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('admin.jpg'); /* Add your image path here */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the upper part of the container */
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            color: #fff;
+            margin-top: 50px; /* Add margin to move the container down */
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: rgb(247, 181, 136,0.9);
+        }
+        .container form {
+            background-color: rgb(168, 187, 186,0.5); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(255, 128, 64);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .container input[type="submit"]:hover {
+            background-color: rgb(255, 128, 0);
+        }
+    </style>
+<body>
+	<div class="container">
+        <h1>Welcome ADMIN</h1>
+        <form action="admin" method="post">
+            <label for="uname">UserName:</label>
+            <input type="text" name="uname" required ><br>
+            
+            <label for="pword">Password:</label>
+            <input type="password" name="pword" required ><br>
+            
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>
