@@ -7,7 +7,7 @@ public class AddProductDAO {
 		try {
 			Connection con=DBConnection.getCon();
 			PreparedStatement ps=con.prepareStatement("insert into Product values(?,?,?,?)");
-			
+			int a;
 			ps.setString(1, pb.getCode());
 			ps.setString(2, pb.getName());
 			ps.setDouble(3, pb.getPrice());
